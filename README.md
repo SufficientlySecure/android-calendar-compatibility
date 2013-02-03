@@ -21,3 +21,12 @@ Cursor c1 = contentResolver.query(calenderUri, new String[] { BaseColumns._ID },
 ```
 
 * Many more problems can occur!
+
+# Information
+
+Thanks to Marten Gajda (http://dmfs.org/) for providing the first version, contributed to Birthday Adapter.
+
+# How it is done
+1. Copy current version of CalendarContract from Google's Android tree
+2. Look at android.provider.Calendar from Android 2.2 how the fields are named there (http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/2.2_r1.1/android/provider/Calendar.java)
+3. Fix CalendarContract based on your findings
