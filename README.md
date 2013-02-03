@@ -30,3 +30,8 @@ Thanks to Marten Gajda (http://dmfs.org/) for providing the first version, contr
 1. Copy current version of CalendarContract from Google's Android tree
 2. Look at android.provider.Calendar from Android 2.2 how the fields are named there (http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/2.2_r1.1/android/provider/Calendar.java)
 3. Fix CalendarContract based on your findings
+
+# Contribute!
+
+If you have fixes or comments please make a issue report or pull request! 
+I appreciate all contributions!
