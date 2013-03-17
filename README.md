@@ -6,7 +6,7 @@ This class enables the use of the calendar API from Android >= 2.2!
 
 Put this Java file into your project to use it as a wrapper.
 Pay attention to these issues:
-* Not every field is supported on Android < 4. Test carefully!
+* Not every field is supported on Android < 4. Test carefully! Most properties that are not supported return null in my CalendarContract!
 * Some things need extra care on Android < 4!
 When selecting calendars via query, setting your account in the by query parameters and the sync adapter query is not enough!
 Also select them via query!
@@ -26,7 +26,7 @@ Cursor c1 = contentResolver.query(calenderUri, new String[] { BaseColumns._ID },
 
 Thanks to Marten Gajda (http://dmfs.org/) for providing the first version, contributed to Birthday Adapter.
 
-# How it is done
+# How this CalendarContract class build
 1. Copy current version of CalendarContract from Google's Android tree
 2. Look at android.provider.Calendar from Android 2.2 how the fields are named there (http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/2.2_r1.1/android/provider/Calendar.java)
 3. Fix CalendarContract based on your findings
