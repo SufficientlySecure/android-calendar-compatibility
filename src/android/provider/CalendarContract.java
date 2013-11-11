@@ -89,7 +89,7 @@ import android.util.Log;
  * </ul>
  *
  */
-@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+@TargetApi(17)
 public final class CalendarContract {
     private static final String TAG = "Calendar";
     
